@@ -1,0 +1,25 @@
+{
+  "name": "vector-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "wrangler deploy --minify index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "tsx": "^4.7.3",
+    "typescript": "^5.4.5",
+    "wrangler": "^3.52.0"
+  },
+  "dependencies": {
+    "@upstash/vector": "^1.0.7",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "hono": "^4.2.8",
+    "langchain": "^0.1.36"
+  }
+}
