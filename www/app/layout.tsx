@@ -3,6 +3,7 @@ import { Recursive } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Provider from "@/components/Provider";
+import Footer from "@/components/Footer";
 
 const recursive = Recursive({ subsets: ["latin"] });
 
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  maximumScale: 1, // Disable auto-zoom on mobile Safari, credit to https://github.com/ai-ng
+  maximumScale: 1,
 };
 
 export default function RootLayout({
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={recursive.className}>
         <Navbar />
         <Provider>{children}</Provider>
+        <Footer />
       </body>
     </html>
   );

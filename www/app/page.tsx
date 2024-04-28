@@ -14,21 +14,21 @@ export default async function Home() {
   let requests = await redis.get("served-requests");
 
   return (
-    <div className="bg-blue-50 grainy-light">
+    <div className="bg-blue-100  grainy-dark">
       <div className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl pb-24 pt-10 sm:grid lg:grid-cols-2 sm:pb-32 lg:gap-x-8 lg:px-8 lg:pt-32 lg:pb-52">
           <div className="px-6 lg:px-0 lg:pt-4">
             <div className="mx-auto max-w-lg text-center sm:text-left flex flex-col items-center lg:items-start">
               <h1
                 className={cn(
-                  "relative tracking-tight sm:text-left mt-10 font-bold !leading-[4rem] text-gray-900 text-5xl md:text-7xl"
+                  "relative tracking-tight sm:text-left mt-10 font-bold !leading-[4rem] text-gray-900 text-5xl md:text-6xl"
                 )}
               >
                 <span className="whitespace-nowrap">
-                  Profan
+                  CleanS
                   <span className="relative">
-                    i
-                    <span className="absolute -left-4 -right-4 translate-x-[15px] md:translate-x-[3px] md:-top-1.5">
+                    p
+                    <span className="absolute -left-2 -right-4 translate-x-[15px] md:translate-x-[3px] md:-top-1.5">
                       <img
                         alt="swaer-emoji"
                         src="/swear-emoji.png"
@@ -36,7 +36,7 @@ export default async function Home() {
                       />
                     </span>
                   </span>
-                  ty
+                  eak
                 </span>{" "}
                 API
               </h1>
@@ -75,7 +75,7 @@ export default async function Home() {
                   </li>
                   <li className="flex gap-1.5 items-center">
                     <Check className="h-5 w-5 shrink-0 text-red-500" /> 100%
-                    free
+                    free and open source ( in future 🙊 )
                   </li>
                 </div>
               </ul>
@@ -142,7 +142,7 @@ export default async function Home() {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
       </div>
 
-      <section className="bg-blue-100 grainy-dark px-4">
+      <section className="bg-blue-50 grainy-light px-4">
         <div className="mx-auto max-w-6xl gap-6 pb-24 pt-20 sm:pb-32 lg:gap-x-8 lg:px-8 lg:py-40">
           <div className="w-full flex flex-col">
             <div className="flex justify-center text-center">
@@ -223,7 +223,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section id="video-demo" className="bg-blue-50 grainy-light">
+      <section id="video-demo" className="bg-blue-100 grainy-dark">
         <div className="mx-auto max-w-6xl gap-6 pb-24 pt-10 sm:pb-32 lg:gap-x-8 lg:px-8 lg:py-40">
           <h2 className="mx-auto text-balance text-5xl sm:text-6xl text-center font-bold leading-[4.25rem] tracking-tight max-w-2xl text-slate-900">
             There's a{" "}
