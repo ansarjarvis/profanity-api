@@ -8,7 +8,9 @@ import { Input } from "./ui/input";
 import { Icons } from "./Icons";
 
 const Demo = () => {
-  const [message, setMessage] = useState<string>("fuck profanity");
+  const [message, setMessage] = useState<string>(
+    "this generation is brain washed"
+  );
 
   const { data, mutate, isPending, error } = useMutation({
     mutationKey: ["check-profanity"],
@@ -24,7 +26,7 @@ const Demo = () => {
 
   return (
     <div className="flex flex-col gap-5 items-center">
-      <div className="relative w-full rounded-xl mt-12 bg-gray-900/5 p-4 ring-1 ring-inset ring-gray-900/10 lg:rounded-2xl">
+      <div className="relative w-full rounded-xl mt-12 bg-gray-900/10 p-4 ring-1 ring-inset ring-gray-900/10 lg:rounded-2xl">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center rounded-md bg-zinc-700 px-3 py-1 text-xs font-medium text-white ring-1 ring-inset ring-blue-400/20">
