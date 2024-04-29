@@ -5,6 +5,7 @@ import { Icons } from "@/components/Icons";
 import Demo from "@/components/Demo";
 import { redis } from "@/lib/redis";
 import CodeSection from "@/components/Codesection";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 const fontScary = localFont({
   src: "../assets/Scary.ttf",
@@ -16,6 +17,13 @@ export default async function Home() {
   return (
     <div className="bg-blue-100  grainy-dark">
       <div className="relative overflow-hidden">
+        <MaxWidthWrapper className="mb-12 mt-28 sm:mt-20 flex flex-col items-center justify-center text-center">
+          <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
+            <p className="text-sm font-semibold text-gray-700">
+              ProfanityAPI is still in Development
+            </p>
+          </div>
+        </MaxWidthWrapper>
         <div className="mx-auto max-w-7xl pb-24 pt-10 sm:grid lg:grid-cols-2 sm:pb-32 lg:gap-x-8 lg:px-8 lg:pt-32 lg:pb-52">
           <div className="px-6 lg:px-0 lg:pt-4">
             <div className="mx-auto max-w-lg text-center sm:text-left flex flex-col items-center lg:items-start">
@@ -147,11 +155,11 @@ export default async function Home() {
           <div className="w-full flex flex-col">
             <div className="flex justify-center text-center">
               <h2 className="font-heading text-5xl lg:text-6xl font-bold leading-tight text-balance sm:leading-none tracking-tight">
-                "Hate speech{" "}
+                Hate speech{" "}
                 <span className="bg-red-500 text-white font-scary px-3">
                   f@#k!ng
                 </span>{" "}
-                sucks"
+                sucks
               </h2>
             </div>
             <p className="mx-auto mt-8 text-center text-sm max-w-xl">
@@ -166,10 +174,10 @@ export default async function Home() {
               <span className="font-semibold">
                 Moderating profanity is a thankless job.
               </span>{" "}
-              If you run a web app with any kind of user generated content, it's
-              your responsibility to keep things in order. That's a challenge if
-              your users keep dropping F-bombs like confetti at a toddler's
-              birthday party.
+              If you run a web app with any kind of user generated content, it
+              is your responsibility to keep things in order. That is a
+              challenge if your users keep dropping F-bombs like confetti at a
+              toddler birthday party.
             </p>
 
             <Icons.arrow className="h-60 -mt-4 text-zinc-400 fill-zinc-400 pointer-events-none select-none" />
@@ -226,7 +234,7 @@ export default async function Home() {
       <section id="video-demo" className="bg-blue-100 grainy-dark">
         <div className="mx-auto max-w-6xl gap-6 pb-24 pt-10 sm:pb-32 lg:gap-x-8 lg:px-8 lg:py-40">
           <h2 className="mx-auto text-balance text-5xl sm:text-6xl text-center font-bold leading-[4.25rem] tracking-tight max-w-2xl text-slate-900">
-            There's a{" "}
+            There is a{" "}
             <span className="px-2 bg-red-500 text-white"> better</span> way
           </h2>
 

@@ -14,7 +14,7 @@ const Footer = () => {
             initially anticipated :D
           </p>
           <p className="max-w-md text-sm text-gray-500">
-            Hello Curious👋, I'm{" "}
+            Hello Curious👋, I am{" "}
             <a
               className="underline"
               href="https://ansarjarvis.onrender.com/"
